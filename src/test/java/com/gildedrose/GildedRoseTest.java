@@ -63,4 +63,28 @@ class GildedRoseTest {
     assertEquals(2, element2.quality, "Mauvaise mise à jour de la qualité");
   }
 
+
+  @Test
+  @DisplayName("Test sur sellin et quality de Backstage passes to a TAFKAL80ETC concert")
+  void BackstageTest() {
+    Item element1 = new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20);
+    Item element2 = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 20);
+    Item element3 = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 20);
+    Item element4 = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 20);
+
+    GildedRose app = new GildedRose(new Item[] {element1, element2, element3, element4});
+    app.updateQuality();
+    assertEquals(14, element1.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(21, element1.quality, "Mauvaise mise à jour de la qualité");
+
+    assertEquals(9, element2.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(22, element2.quality, "Mauvaise mise à jour de la qualité");
+
+    assertEquals(4, element3.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(23, element3.quality, "Mauvaise mise à jour de la date qualité");
+
+    assertEquals(-1, element4.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(0, element4.quality, "Mauvaise mise à jour de la qualité");
+  }
+
 }
