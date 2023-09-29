@@ -27,4 +27,17 @@ class GildedRoseTest {
     assertEquals(48, element2.quality, "La qualité n'a pas été changé");
     assertEquals(4, element3.quality, "La qualité n'a pas été changé");
   }
+
+  @Test
+  @DisplayName("Test pour que la qualité ne dépasse pas 50")
+  void QualityTest() {
+    Item element1 = new Item("Aged Brie", 2, 50);
+    Item element2 = new Item("Backstage passes to a TAFKAL80ETC concert", 2, 48);
+
+    GildedRose app = new GildedRose(new Item[] {element1, element2});
+    app.updateQuality();
+    assertEquals(50, element1.quality, "La qualité a dépassé 50");
+    assertEquals(50, element2.quality, "La qualité a dépassé 50");
+  }
+
 }
