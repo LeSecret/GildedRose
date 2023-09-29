@@ -40,4 +40,14 @@ class GildedRoseTest {
     assertEquals(50, element2.quality, "La qualité a dépassé 50");
   }
 
+  @Test
+  @DisplayName("Test sur la date et la qualité de Sulfuras, Hand of Ragnaros")
+  void sulfurasTest() {
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 0, 80);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(0, element.sellIn, "Mauvaise mise à jour de la date");
+    assertEquals(80, element.quality, "Mauvaise mise à jour de la qualité");
+  }
+
 }
