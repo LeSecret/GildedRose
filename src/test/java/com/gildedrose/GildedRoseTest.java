@@ -50,4 +50,17 @@ class GildedRoseTest {
     assertEquals(80, element.quality, "Mauvaise mise à jour de la qualité");
   }
 
+  @Test
+  @DisplayName("Test sur sellIn et quality de Aged Brie")
+  void AgedBrieTest() {
+    Item element1 = new Item("Aged Brie", 2, 0);
+    Item element2 = new Item("Aged Brie", 0, 0);
+    GildedRose app = new GildedRose(new Item[] {element1, element2});
+    app.updateQuality();
+    assertEquals(1, element1.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(1, element1.quality, "Mauvaise mise à jour de la qualité");
+    assertEquals(-1, element2.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(2, element2.quality, "Mauvaise mise à jour de la qualité");
+  }
+
 }

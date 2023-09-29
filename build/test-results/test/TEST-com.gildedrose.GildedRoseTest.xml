@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-29T22:27:34" hostname="DESKTOP-ASAJG0E" time="0.062">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-29T22:31:06" hostname="DESKTOP-ASAJG0E" time="0.082">
   <properties/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.052"/>
-  <testcase name="Test pour voir le changement des articles par défaut" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test pour que la qualité ne dépasse pas 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.057"/>
+  <testcase name="Test pour voir le changement des articles par défaut" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test sur sellIn et quality de Aged Brie" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test pour que la qualité ne dépasse pas 50" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
