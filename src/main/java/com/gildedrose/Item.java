@@ -14,8 +14,12 @@ public class Item {
         this.quality = quality;
     }
 
-    private void incrementation_Qlté() {
+    private void incrementation_Qlty() {
         if (this.quality < 50) this.quality += 1;
+    }
+
+    private void decrementation_Qlty() {
+        if (this.quality > 0) this.quality -= 1;
     }
 
     public void updateQuality() {
