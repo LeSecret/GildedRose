@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-09-29T22:41:44" hostname="DESKTOP-ASAJG0E" time="0.072">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-10-03T15:11:26" hostname="DESKTOP-ASAJG0E" time="0.054">
   <properties/>
-  <testcase name="Test sur sellin et quality de Backstage passes to a TAFKAL80ETC concert" classname="com.gildedrose.GildedRoseTest" time="0.049"/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.005"/>
-  <testcase name="Test pour voir le changement des articles par défaut" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test sur sellin et quality de Backstage passes to a TAFKAL80ETC concert" classname="com.gildedrose.GildedRoseTest" time="0.026"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
+  <testcase name="Test pour voir le changement des articles par défaut" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
   <testcase name="Test sur sellIn et quality de Aged Brie" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test pour que la qualité ne dépasse pas 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="Test pour que la qualité ne dépasse pas 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

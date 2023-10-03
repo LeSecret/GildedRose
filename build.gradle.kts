@@ -4,14 +4,21 @@ plugins {
     checkstyle
     pmd
     id("com.github.spotbugs") version "5.0.12"
+    id("info.solidsoft.pitest") version "1.7.4"
 }
+
+group = "com.gildedrose"
+version = "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
+    testImplementation ("org.hamcrest:hamcrest:2.2")
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.3.1")
+    pitest ("org.pitest:pitest-junit5-plugin:0.12")
 }
 
 tasks.test {
