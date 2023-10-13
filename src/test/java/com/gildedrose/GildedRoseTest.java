@@ -109,7 +109,7 @@ class GildedRoseTest {
   }
 
   @Test
-    void cake_quality_update() {
+    void conjuredTest2() {
         int q = 0;
         Item[] items = new Item[]{new Item("Conjured Mana Cake", -1, q)};
         GildedRose app = new GildedRose(items);
