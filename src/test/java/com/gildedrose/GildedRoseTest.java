@@ -14,6 +14,17 @@ class GildedRoseTest {
     assertEquals("foo", element.name, "the name changed");
   }
   
+
+  @Test
+  void StringAgedBrie() {
+    Item items = new Item("Aged Brie", 2, 0);
+    GildedRose app = new GildedRose(new Item[] {items});
+    app.updateQuality();
+    assertEquals("Aged Brie, 1, 1", app.items[0].toString(), "Mauvaise mise à jour de la date de pérumption");
+    }
+
+
+
   @Test
   @DisplayName("Test pour voir le changement des articles par défaut")
   void ArticleDefautTest() {
@@ -87,4 +98,26 @@ class GildedRoseTest {
     assertEquals(0, element4.quality, "Mauvaise mise à jour de la qualité");
   }
 
+  @Test
+  @DisplayName("Test sur sellin et quality de Conjured Mana Cake")
+  void conjuredTest() {
+    Item element = new Item("Conjured Mana Cake", 3, 50);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(2, element.sellIn, "Mauvaise mise à jour de la date de pérumption");
+    assertEquals(48, element.quality, "Mauvaise mise à jour de la qualité");
+  }
+
+  @Test
+    void cake_quality_update() {
+        int q = 0;
+        Item[] items = new Item[]{new Item("Conjured Mana Cake", -1, q)};
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(q, items[0].quality, "Mauvaise mise à jour de la date de pérumption");
+    }
+
+
+  
+ 
 }

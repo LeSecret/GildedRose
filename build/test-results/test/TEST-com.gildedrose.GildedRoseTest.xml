@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-10-03T17:01:08" hostname="DESKTOP-ASAJG0E" time="0.049">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-10-13T20:42:38" hostname="DESKTOP-ASAJG0E" time="0.125">
   <properties/>
-  <testcase name="Test sur sellin et quality de Backstage passes to a TAFKAL80ETC concert" classname="com.gildedrose.GildedRoseTest" time="0.024"/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.01"/>
+  <testcase name="Test sur sellin et quality de Backstage passes to a TAFKAL80ETC concert" classname="com.gildedrose.GildedRoseTest" time="0.051"/>
+  <testcase name="Test sur sellin et quality de Conjured Mana Cake" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
+  <testcase name="StringAgedBrie()" classname="com.gildedrose.GildedRoseTest" time="0.014"/>
   <testcase name="Test pour voir le changement des articles par défaut" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test sur sellIn et quality de Aged Brie" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test pour que la qualité ne dépasse pas 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test sur la date et la qualité de Sulfuras, Hand of Ragnaros" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="cake_quality_update()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

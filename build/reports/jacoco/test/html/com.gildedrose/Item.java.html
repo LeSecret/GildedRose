@@ -25,7 +25,7 @@ public class Item {
     public void updateQuality() {
 <span class="fc" id="L26">        sellIn -= 1;</span>
 
-<span class="fc bfc" id="L28" title="All 4 branches covered.">        switch (name) {</span>
+<span class="fc bfc" id="L28" title="All 5 branches covered.">        switch (name) {</span>
             case &quot;Sulfuras, Hand of Ragnaros&quot;:
 <span class="fc" id="L30">                sellIn = 0;</span>
 <span class="fc" id="L31">                quality = 80;</span>
@@ -43,17 +43,26 @@ public class Item {
 <span class="fc bfc" id="L43" title="All 2 branches covered.">                if (sellIn &lt; 0) quality = 0;</span>
                 break;
 
-            default :
+                case &quot;Conjured Mana Cake&quot;:
 <span class="fc" id="L47">                this.decrementation_Qlty();</span>
-<span class="fc bfc" id="L48" title="All 2 branches covered.">                if (sellIn &lt; 0) this.decrementation_Qlty();</span>
+<span class="fc" id="L48">                this.decrementation_Qlty();</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">                if(sellIn &lt; 0) {</span>
+<span class="fc" id="L50">                    this.decrementation_Qlty();</span>
+<span class="fc" id="L51">                    this.decrementation_Qlty();</span>
+                }
+                break;
+
+            default :
+<span class="fc" id="L56">                this.decrementation_Qlty();</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">                if (sellIn &lt; 0) this.decrementation_Qlty();</span>
 
         }
-<span class="fc" id="L51">    }</span>
+<span class="fc" id="L60">    }</span>
 
 
    @Override
    public String toString() {
-<span class="nc" id="L56">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
+<span class="fc" id="L65">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
