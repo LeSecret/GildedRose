@@ -20,9 +20,24 @@ class GildedRoseTest {
     Item items = new Item("Aged Brie", 2, 0);
     GildedRose app = new GildedRose(new Item[] {items});
     app.updateQuality();
-    assertEquals("Aged Brie, 1, 1", app.items[0].toString(), "Mauvaise mise à jour de la date de pérumption");
+    assertEquals("Aged Brie, 1, 1", app.items[0].toString(), "Mauvaise mise à jour");
     }
 
+  @Test
+  void StringBackstage() {
+    Item items = new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20);
+    GildedRose app = new GildedRose(new Item[] {items});
+    app.updateQuality();
+    assertEquals("Backstage passes to a TAFKAL80ETC concert, 14, 21", app.items[0].toString(), "Mauvaise mise à jour");
+    }
+
+  @Test
+  void StringConjured() {
+    Item items = new Item("Conjured Mana Cake", 3, 6);
+    GildedRose app = new GildedRose(new Item[] {items});
+    app.updateQuality();
+    assertEquals("Conjured Mana Cake, 2, 4", app.items[0].toString(), "Mauvaise mise à jour");
+    }
 
 
   @Test
@@ -114,7 +129,7 @@ class GildedRoseTest {
         Item[] items = new Item[]{new Item("Conjured Mana Cake", -1, q)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(q, items[0].quality, "Mauvaise mise à jour de la date de pérumption");
+        assertEquals(q, items[0].quality, "Mauvaise mise à jour de la date de qualité");
     }
 
 
